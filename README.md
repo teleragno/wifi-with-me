@@ -1,5 +1,23 @@
-Dependencies
-============
+# Run from Docker
+
+If you have docker-compose installed, the only command needed is :
+
+```console
+docker-compose up -d
+```
+
+If you only have the base Docker program, you can simply run :
+
+``` console
+docker run -d --name wifi-with-me -p 8080:8080 --restart=unless-stopped teleragno/wifi-with-me
+```
+
+**Warning :** for now, no data volume has been set, so be carefull that your data will be lost if the container is deleted.
+
+# Run from sources
+
+## Requirements
+
 We use bottle micro-framework.
 
 ```console
@@ -14,8 +32,7 @@ or
 pip install bottle
 ```
 
-Running
-=======
+## Running
 
 ```console
 ./backend.py
@@ -45,22 +62,19 @@ Default is to listen on `127.0.0.0`, port `8080`.
 You can also pass a `URL_PREFIX='/some_folder/'` if you don't want the app to be
 served at the root of the domain.
 
-Create the DataBase
-===================
+## Create the DataBase
 
 ```console
 python backend.py createdb
 ```
 
-Build GeoJSON files
-===================
+## Build GeoJSON files
 
 ```console
 python backend.py buildgeojson
 ```
 
-Drop the database
-=================
+## Drop the database
 
 ```console
 rm db.sqlite3
@@ -68,8 +82,7 @@ rm db.sqlite3
 
 What else ?
 
-Customizing appearance
-======================
+## Customizing appearance
 
 Wether you like or not balloons, you may want to override some templates and/or
 static files.
