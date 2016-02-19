@@ -1,3 +1,5 @@
+"Wifi with me" is a webapp to inventory people's will to participate in a wireless ISP.
+
 # Run from Docker
 
 If you have docker-compose installed, the only command needed is :
