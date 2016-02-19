@@ -1,0 +1,4 @@
+server:
+    image: taeradan/wifi-with-me
+    ports:
+        - "8081:8080"
