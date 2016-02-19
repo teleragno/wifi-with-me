@@ -1,4 +1,4 @@
 server:
-    image: taeradan/wifi-with-me
+    image: teleragno/wifi-with-me
     ports:
         - "8081:8080"
