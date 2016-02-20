@@ -1,4 +1,4 @@
 server:
     image: teleragno/wifi-with-me
     ports:
-        - "8081:8080"
+        - "8080:8080"
